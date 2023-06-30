@@ -70,7 +70,7 @@ namespace Projeto06.Repositories
         public List<Cliente> ObterTodos()
         {
             var query = @"
-                SELECT * FROM CLINETE
+                SELECT * FROM CLIENTE
                 ORDER BY NOME
              ";
 
@@ -85,7 +85,7 @@ namespace Projeto06.Repositories
         public Cliente? ObterPorID(Guid id)
         {
             var query = @"
-                SELECT * FROM CLINETE
+                SELECT * FROM CLIENTE
                 WHERE ID = @Id
              ";
 
